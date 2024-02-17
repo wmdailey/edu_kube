@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: second-app-deployment
+  name: second-kube-app
 spec:
   replicas: 1
   selector:
@@ -16,6 +16,6 @@ spec:
     spec: 
       containers:
         - name: second-node
-          image: academind/kub-first-app:2
+          image: wmdailey/kube-app:2
         # - name: ...
         #   image: ...
